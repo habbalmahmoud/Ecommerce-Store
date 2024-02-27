@@ -11,7 +11,7 @@ const Header = () => {
     return(
         <div>
             <div className="text-white bg-black text-center p-3 fw-bold fs-3">Future App</div>
-            <div className="container d-flex flex-row justify-content-between">
+            <div className="container d-flex flex-row justify-content-between resp">
                 <div>
                     <img src={logo}></img>
                 </div>

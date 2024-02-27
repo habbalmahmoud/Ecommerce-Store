@@ -4,3 +4,5 @@ README.md filter=lfs diff=lfs merge=lfs -text
 node_modules filter=lfs diff=lfs merge=lfs -text
 package-lock.json filter=lfs diff=lfs merge=lfs -text
 package.json filter=lfs diff=lfs merge=lfs -text
+build filter=lfs diff=lfs merge=lfs -text
+tailwind.config.js filter=lfs diff=lfs merge=lfs -text
