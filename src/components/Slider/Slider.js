@@ -38,16 +38,20 @@ const Slider = () => {
         </div>
         <div className="flex absolute bottom-10 start-50 translate-middle-x">
             {sliderData.map((dot, index) => {
+                const pillStyle = {
+                    width : 15,
+                    height : 15
+                }
                 return (
                 <div className="mr-4" key={index}>
-                    <div className={index === sliceIndex ? "bg-green-300 rounded-full p-4 cursor-pointer" : "bg-white rounded-full p-4 cursor-pointer"} onClick={() => dispatch(dotSlide(index))}></div>
+                    <div style={pillStyle} className={index === sliceIndex ? "bg-green-300 rounded-full p-2 cursor-pointer" : "bg-white rounded-full p-2 cursor-pointer"} onClick={() => dispatch(dotSlide(index))}></div>
                 </div>
                )
             })}
         </div>
         <div>
-            <button className="hover position-absolute top-50 start-0 m-2 rounded-full bg-white p-2 wtvr" onClick={() => dispatch(prevSlide(sliceIndex - 1))}><SlArrowLeft /></button>
-            <button className="position-absolute top-50 end-0 m-2 rounded-full bg-white p-2 wtvr" onClick={() => dispatch(nextSlider(sliceIndex + 1))}><SlArrowRight /></button>
+            <button className="hover position-absolute top-50 start-0 m-2 rounded-full bg-white p-2" onClick={() => dispatch(prevSlide(sliceIndex - 1))}><SlArrowLeft /></button>
+            <button className="position-absolute top-50 end-0 m-2 rounded-full bg-white p-2" onClick={() => dispatch(nextSlider(sliceIndex + 1))}><SlArrowRight /></button>
         </div>   
     </div>
  )

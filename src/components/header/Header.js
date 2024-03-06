@@ -1,8 +1,8 @@
 import React from "react";
-import logo from '../../assets/logo.png'
+import logo from '../../assets/images/logo.png'
 import { FaRegHeart } from "react-icons/fa";
 import { MdOutlineShoppingBag } from "react-icons/md";
-import Capture from '../../assets/Capture.PNG'
+import Capture from '../../assets/images/Capture.PNG'
 
 
 
