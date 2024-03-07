@@ -13,8 +13,8 @@ function App() {
       <Router>
         <Routes>
           <Route path='/Ecommerce-Store' element={<Home />} />
-          <Route path='/Ecommerce-Store/Hoodies' element={<Hoodies />} />
-          <Route path='/Ecommerce-Store/Dresses' element={<Dresses />} />
+          <Route path='/Ecommerce-Store/Ecommerce-Store/Hoodies' element={<Hoodies />} />
+          <Route path='/Ecommerce-Store/Ecommerce-Store/Dresses' element={<Dresses />} />
           <Route>404 Not Found!</Route>
         </Routes>
       </Router>
