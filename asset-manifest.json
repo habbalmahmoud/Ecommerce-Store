@@ -1,22 +1,30 @@
 {
   "files": {
-    "main.css": "/Ecommerce-Store/static/css/main.1bab6560.css",
-    "main.js": "/Ecommerce-Store/static/js/main.cef9103a.js",
+    "main.css": "/Ecommerce-Store/static/css/main.afa58d71.css",
+    "main.js": "/Ecommerce-Store/static/js/main.4e8e6e14.js",
+    "static/media/hoodie7.jpg": "/Ecommerce-Store/static/media/hoodie7.07c786381daedacdf42f.jpg",
     "static/media/shoe4.jpg": "/Ecommerce-Store/static/media/shoe4.9ebea5630ca946b7e336.jpg",
+    "static/media/hoodie3.jpg": "/Ecommerce-Store/static/media/hoodie3.b9146f93ebf7263c665c.jpg",
     "static/media/shoe2.jpg": "/Ecommerce-Store/static/media/shoe2.abdde8047ae68b91b432.jpg",
     "static/media/t-shirt3.jpg": "/Ecommerce-Store/static/media/t-shirt3.050bf01a67bfc83ca56a.jpg",
+    "static/media/hoodie5.jpg": "/Ecommerce-Store/static/media/hoodie5.330ad303c7aa337165e4.jpg",
+    "static/media/hoodie6.jpg": "/Ecommerce-Store/static/media/hoodie6.753b9997d9b9d9b5c912.jpg",
+    "static/media/hoodie8.jpg": "/Ecommerce-Store/static/media/hoodie8.9e79774c8842909e46c6.jpg",
+    "static/media/hoodie4.jpg": "/Ecommerce-Store/static/media/hoodie4.00a4d53a715fcaa19ad2.jpg",
     "static/media/shoe12.jpg": "/Ecommerce-Store/static/media/shoe12.4aa91f8ec0faa6cf3d66.jpg",
+    "static/media/hoodie2.jpg": "/Ecommerce-Store/static/media/hoodie2.b60dfa1c1fca6d538479.jpg",
     "static/media/clothes.jpg": "/Ecommerce-Store/static/media/clothes.0345bec6981467026647.jpg",
+    "static/media/hoodie1.jpg": "/Ecommerce-Store/static/media/hoodie1.2c739bfe7483b5579cf1.jpg",
     "static/media/shoe1.jpg": "/Ecommerce-Store/static/media/shoe1.d0490ecf7d9c2c3abd9f.jpg",
     "static/media/t-shirt1.jpg": "/Ecommerce-Store/static/media/t-shirt1.831f5bdf191efbbbf968.jpg",
     "static/media/t-shirt2.jpg": "/Ecommerce-Store/static/media/t-shirt2.4406b23838c351ba3863.jpg",
     "static/media/Capture.PNG": "/Ecommerce-Store/static/media/Capture.6d7d49452021fd1d9d49.PNG",
     "index.html": "/Ecommerce-Store/index.html",
-    "main.1bab6560.css.map": "/Ecommerce-Store/static/css/main.1bab6560.css.map",
-    "main.cef9103a.js.map": "/Ecommerce-Store/static/js/main.cef9103a.js.map"
+    "main.afa58d71.css.map": "/Ecommerce-Store/static/css/main.afa58d71.css.map",
+    "main.4e8e6e14.js.map": "/Ecommerce-Store/static/js/main.4e8e6e14.js.map"
   },
   "entrypoints": [
-    "static/css/main.1bab6560.css",
-    "static/js/main.cef9103a.js"
+    "static/css/main.afa58d71.css",
+    "static/js/main.4e8e6e14.js"
   ]
 }
