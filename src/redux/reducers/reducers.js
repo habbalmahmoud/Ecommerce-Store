@@ -6,7 +6,8 @@ const initialState = {
     SliderSection : {
         value: 0,
         length: sliderData.length
-    }
+    },
+    Product : []
 }
 
 export const sliderProducts = (state = initialState, {type,payload}) => {
@@ -43,5 +44,17 @@ export const sliderProducts = (state = initialState, {type,payload}) => {
             }
         default:
             return state   
+    }
+}
+
+export const assignProduct = (state = initialState, {type , payload}) => {
+    switch (type) {
+        case ActionTypes.ASSIGN_PRODUCT:
+            return {
+                ...state,
+                Product : payload
+            }
+        default:
+            return state;
     }
 }

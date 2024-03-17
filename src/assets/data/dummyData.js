@@ -13,6 +13,22 @@ import hoodie5 from '../images/hoodie5.jpg'
 import hoodie6 from '../images/hoodie6.jpg'
 import hoodie7 from '../images/hoodie7.jpg'
 import hoodie8 from '../images/hoodie8.jpg'
+import shoe5 from "../images/shoe5.jpg";
+import shoe6 from "../images/shoe6.jpg";
+import shoe7 from "../images/shoe7.jpg";
+import shoe8 from "../images/shoe8.jpg";
+import shoe9 from "../images/shoe9.jpg";
+import shoe10 from "../images/shoe10.jpg";
+import shoe11 from "../images/shoe11.jpg";
+import jeans1 from "../images/jeans1.jpg";
+import jeans2 from "../images/jeans2.jpg";
+import jeans3 from "../images/jeans3.jpg";
+import jeans4 from "../images/jeans4.jpg";
+import jeans5 from "../images/jeans5.jpg";
+import jeans6 from "../images/jeans6.jpg";
+import jeans7 from "../images/jeans7.jpg";
+import jeans8 from "../images/jeans8.jpg";
+
 
 export const sliderData = [
     {
@@ -159,5 +175,181 @@ export const storeData = [
     color: ["green", "yellow", "red"],
     gender: "female",
     price: 355,
+  },
+  {
+    id: "17",
+    img: shoe5,
+    name: "Casual Shoes 1",
+    text: "Fashion never stops. There is always the new project, the new opportunity. The important thing is to take your time and not get stressed. I just want to do what I do.",
+    type: "Shoes",
+    size: ["40", "42", "44", "46"],
+    color: ["black", "gray"],
+    gender: "male",
+    price: 200,
+  },
+  {
+    id: "18",
+    img: shoe6,
+    name: "Casual Shoes 2",
+    text: "Fashion never stops. There is always the new project, the new opportunity. The important thing is to take your time and not get stressed. I just want to do what I do.",
+    type: "Shoes",
+    size: ["40", "42", "44", "46"],
+    color: ["brown", "gray"],
+    gender: "female",
+    price: 250,
+  },
+  {
+    id: "19",
+    img: shoe7,
+    name: "Casual Shoes 3",
+    text: "Fashion never stops. There is always the new project, the new opportunity. The important thing is to take your time and not get stressed. I just want to do what I do.",
+    type: "Shoes",
+    size: ["36", "38", "40", "42"],
+    color: ["black", "gray", "blue"],
+    gender: "female",
+    price: 685,
+  },
+  {
+    id: "20",
+    img: shoe8,
+    name: "Casual Shoes 4",
+    text: "Fashion never stops. There is always the new project, the new opportunity. The important thing is to take your time and not get stressed. I just want to do what I do.",
+    type: "Shoes",
+    size: ["36", "38", "40", "42"],
+    color: ["black", "gray"],
+    gender: "male",
+    price: 255,
+  },
+  {
+    id: "21",
+    img: shoe9,
+    name: "Casual Shoes 5",
+    text: "Fashion never stops. There is always the new project, the new opportunity. The important thing is to take your time and not get stressed. I just want to do what I do.",
+    type: "Shoes",
+    size: ["36", "38", "40", "42"],
+    color: ["purple", "gray", "black"],
+    gender: "male",
+    price: 355,
+  },
+  {
+    id: "22",
+    img: shoe10,
+    name: "Casual Shoes 6",
+    text: "Fashion never stops. There is always the new project, the new opportunity. The important thing is to take your time and not get stressed. I just want to do what I do.",
+    type: "Shoes",
+    size: ["36", "38", "40", "42"],
+    color: ["purple", "gray", "black"],
+    gender: "male",
+    price: 200,
+  },
+  {
+    id: "23",
+    img: shoe11,
+    name: "Casual Shoes 7",
+    text: "Fashion never stops. There is always the new project, the new opportunity. The important thing is to take your time and not get stressed. I just want to do what I do.",
+    type: "Shoes",
+    size: ["36", "38", "40", "42"],
+    color: ["purple", "green", "black"],
+    gender: "male",
+    price: 100,
+  },
+  {
+    id: "24",
+    img: shoe12,
+    name: "Casual Shoes 8",
+    text: "Fashion never stops. There is always the new project, the new opportunity. The important thing is to take your time and not get stressed. I just want to do what I do.",
+    type: "Shoes",
+    size: ["36", "38", "40", "42"],
+    color: ["purple", "green", "black"],
+    gender: "male",
+    price: 135,
+  },
+  {
+    id: "33",
+    img: jeans1,
+    name: "Casual Jeans 1",
+    text: "Fashion never stops. There is always the new project, the new opportunity. The important thing is to take your time and not get stressed. I just want to do what I do.",
+    type: "Jeans",
+    size: ["S", "M", "L"],
+    color: ["blue", "black"],
+    gender: "male",
+    price: 55,
+  },
+  {
+    id: "34",
+    img: jeans2,
+    name: "Casual Jeans 2",
+    text: "Fashion never stops. There is always the new project, the new opportunity. The important thing is to take your time and not get stressed. I just want to do what I do.",
+    type: "Jeans",
+    size: ["S", "M"],
+    color: ["blue", "black"],
+    gender: "female",
+    price: 75,
+  },
+  {
+    id: "35",
+    img: jeans3,
+    name: "Casual Jeans 3",
+    text: "Fashion never stops. There is always the new project, the new opportunity. The important thing is to take your time and not get stressed. I just want to do what I do.",
+    type: "Jeans",
+    size: ["M", "L", "XL"],
+    color: ["blue", "black"],
+    gender: "male",
+    price: 95,
+  },
+  {
+    id: "36",
+    img: jeans4,
+    name: "Casual Jeans 4",
+    text: "Fashion never stops. There is always the new project, the new opportunity. The important thing is to take your time and not get stressed. I just want to do what I do.",
+    type: "Jeans",
+    size: ["M", "L", "XL"],
+    color: ["blue", "black"],
+    gender: "female",
+    price: 100,
+  },
+  {
+    id: "37",
+    img: jeans5,
+    name: "Casual Jeans 5",
+    text: "Fashion never stops. There is always the new project, the new opportunity. The important thing is to take your time and not get stressed. I just want to do what I do.",
+    type: "Jeans",
+    size: ["M", "L", "XL"],
+    color: ["blue", "black"],
+    gender: "female",
+    price: 200,
+  },
+  {
+    id: "37",
+    img: jeans6,
+    name: "Casual Jeans 6",
+    text: "Fashion never stops. There is always the new project, the new opportunity. The important thing is to take your time and not get stressed. I just want to do what I do.",
+    type: "Jeans",
+    size: ["S", "L", "XL"],
+    color: ["blue", "black"],
+    gender: "female",
+    price: 200,
+  },
+  {
+    id: "38",
+    img: jeans7,
+    name: "Casual Jeans 7",
+    text: "Fashion never stops. There is always the new project, the new opportunity. The important thing is to take your time and not get stressed. I just want to do what I do.",
+    type: "Jeans",
+    size: ["M", "L", "XL"],
+    color: ["blue", "black"],
+    gender: "male",
+    price: 180,
+  },
+  {
+    id: "39",
+    img: jeans8,
+    name: "Casual Jeans 8",
+    text: "Fashion never stops. There is always the new project, the new opportunity. The important thing is to take your time and not get stressed. I just want to do what I do.",
+    type: "Jeans",
+    size: ["M", "L", "XL"],
+    color: ["blue", "black"],
+    gender: "male",
+    price: 160,
   },
 ]

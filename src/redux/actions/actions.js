@@ -21,3 +21,10 @@ export const dotSlide = (product) => {
         payload: product
     }
 }
+
+export const assignProduct = (product) => {
+    return {
+        type: ActionTypes.ASSIGN_PRODUCT,
+        payload : product
+    }
+}
