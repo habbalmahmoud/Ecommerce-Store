@@ -28,3 +28,9 @@ export const assignProduct = (product) => {
         payload : product
     }
 }
+export const assignProducts = (product) => {
+    return {
+        type: ActionTypes.ASSIGN_PRODUCTS,
+        payload : product
+    }
+}

@@ -1,9 +1,10 @@
 import {combineReducers} from 'redux'
-import { assignProduct, sliderProducts } from './reducers'
+import { assignProduct, assignProducts, sliderProducts } from './reducers'
 
 const reducers = combineReducers({
     SliderProducts : sliderProducts,
-    AssignProduct : assignProduct
+    AssignProduct : assignProduct,
+    AssignProducts : assignProducts
 })
 
 export default reducers

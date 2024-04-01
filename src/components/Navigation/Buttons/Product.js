@@ -1,18 +1,34 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useState } from "react";
-import HoodiesCards from "../ClothesCards/HoodiesCards";
-import ShoesCards from "../ClothesCards/ShoesCards";
+import { storeData } from "../../../assets/data/dummyData";
+import { useParams } from "react-router-dom";
+import ProductsCards from "../ClothesCards/ProductsCards";
 
-const Shoes = () => {
+const Product = () => {
+
+    const {productType} = useParams()
+
     const [modeSize, setModeSize] = useState(false)
     const [modeColor, setModeColor] = useState(false)
 
     const dropDownActiveSize = modeSize === true ? "dropdown-content-active" : ""
     const dropDownActiveColor = modeColor === true ? "dropdown-content-active" : ""
 
+    useEffect(() => {
+        if (modeSize == true) {
+            setModeColor(false)
+        }     
+    },[modeSize])
+    useEffect(() => {
+        if (modeColor == true) {
+            setModeSize(false)
+        }
+    },[modeColor])
+    
+
     return (
         <div className="m-5">
-            <h1 className="text-secondary">Shoes</h1>
+            <h1 className="text-secondary">{productType}</h1>
             <div className="d-flex flex-row justify-content-between mb-5">
                 <div className="d-flex flex-row">
                     <button className="button-style-filter rounded fw-bold m-2">MALE</button>
@@ -45,9 +61,9 @@ const Shoes = () => {
                     <button className="button-style-filter rounded fw-bold m-2">CLEAR FILTER</button>
                 </div>
             </div>
-            <ShoesCards />
+            <ProductsCards />
         </div>
     )
 }
 
-export default Shoes
+export default Product

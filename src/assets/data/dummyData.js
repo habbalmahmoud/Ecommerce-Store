@@ -353,3 +353,15 @@ export const storeData = [
     price: 160,
   },
 ]
+
+export const StoreDataTypes = [
+  {
+    type : "Hoodies"
+  },
+  {
+    type : "Jeans"
+  },
+  {
+    type : "Shoes"
+  }
+]

@@ -17,9 +17,9 @@ const SalesCards = () => {
                     }
                     if (item.type === "T-Shirts") {
                         return (
-                            <Link to={`Ecommerce-Store/TShirts/${item.id}`}>
+                            <Link className="Link" to={`Ecommerce-Store/TShirts/${item.id}`}>
                                 <div className="card text-center p-3 shadow-cards" style={{"width": "20rem"}} key={item.id}>
-                                    <img src={item.img} className="card-img-top rounded shadow-cards" style={{'height' : "75%"}} alt="..."/>
+                                    <img src={item.img} className="card-img-top rounded shadow-cards" style={{'height' : "430px"}} alt="..."/>
                                     <div className="card-body">
                                         <h5 className="card-title">Casual T-Shirt {item.id}</h5>
                                         <p className="card-text text-black-50">{item.text}</p>
