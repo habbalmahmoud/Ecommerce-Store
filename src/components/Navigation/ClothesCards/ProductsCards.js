@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { storeData } from "../../../assets/data/dummyData";
 import { Link, useParams } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
@@ -10,18 +10,14 @@ const ProductsCards = () => {
     const dispatch = useDispatch()
     const products = useSelector((state) => state.AssignProducts)
     const {Products} = products
+    
+
 
     const getProductsData = () => {
-        const productsData = []
-        storeData.map((item) => {
-    
-            if (productType == item.type) {
-                productsData.push(item)
-            }
-    
-        })
-        dispatch(assignProducts(productsData))
+        dispatch(assignProducts(productType))
     }
+
+
 
     useEffect(() => {
         getProductsData()

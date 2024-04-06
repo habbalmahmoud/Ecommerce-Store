@@ -34,3 +34,30 @@ export const assignProducts = (product) => {
         payload : product
     }
 }
+
+export const filterGenders = (product) => {
+    return {
+        type : ActionTypes.FILTER_GENDER,
+        payload : product
+    }
+}
+
+export const sortPrice = () => {
+    return {
+        type : ActionTypes.SORT_PRICE
+    }
+}
+
+export const dispSize = (product) => {
+    return {
+        type : ActionTypes.DISP_SIZE,
+        payload : product
+    }
+}
+
+export const dispColor = (product) => {
+    return {
+        type : ActionTypes.DISP_COLOR,
+        payload : product
+    }
+}
