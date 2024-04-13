@@ -1,7 +1,7 @@
 import { ActionTypes } from "../constants/constants";
 import { sliderData } from "../../assets/data/dummyData";
 import { storeData } from "../../assets/data/dummyData";
-
+import shirt1 from '../../assets/images/t-shirt1.jpg'
 
 const initialState = {
     SliderSection : {
@@ -9,7 +9,8 @@ const initialState = {
         length: sliderData.length
     },
     Product : [],
-    Products : []
+    Products : [],
+    Cart : JSON.parse(sessionStorage.getItem("StoredCart"))
 }
 
 export const sliderProducts = (state = initialState, {type,payload}) => {
@@ -149,3 +150,42 @@ export const assignProducts = (state = initialState , {type, payload}) => {
     }
 }
 
+
+export const manageCart = (state = initialState, {type, payload}) => {
+    switch (type) {
+        case ActionTypes.REMOVE_PRODUCT:
+            const newFilteredCart = JSON.parse(sessionStorage.getItem("StoredCart"))
+            const filteredValue = newFilteredCart.filter((product) => product.specialId != payload)
+            state.Cart = filteredValue
+            const storedFilteredCart = JSON.stringify(filteredValue)
+            sessionStorage.setItem("StoredCart", storedFilteredCart)
+            return {
+                ...state,
+                Cart : JSON.parse(sessionStorage.getItem("StoredCart"))
+            }
+        case ActionTypes.ADD_SALES_PRODUCT:
+            let isAv = false
+            let newCart = JSON.parse(sessionStorage.getItem("StoredCart"))
+            if (newCart != null && newCart?.length > 0) {
+                newCart.map((item) => {
+                    if (item.id === payload.id && item.size === payload.size ) {
+                        if (item.color === payload.color) {
+                            item.amount += 1
+                            isAv = true 
+                    }
+                    }
+                })
+                if (isAv == false) newCart.push(payload)
+            } else {
+                newCart = [payload]
+            }
+            let storedCart = JSON.stringify(newCart)
+            sessionStorage.setItem("StoredCart", storedCart)
+            return {
+                ...state,
+                Cart : JSON.parse(sessionStorage.getItem("StoredCart"))
+            }
+        default:
+            return state
+    }
+}

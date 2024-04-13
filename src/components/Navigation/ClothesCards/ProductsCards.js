@@ -25,8 +25,8 @@ const ProductsCards = () => {
 
     return (
         <div className="mt-3 mb-3 row row-cols-4 justify-content-md-center">
-        {
-        Products.map((item) => {
+        {Object.keys(Products).length == 0 ? (<div className="fw-bold" style={{"color" : "red", "width" : "50%", "fontSize" : "35px"}}>Sorry nothing available at the moment...!</div>) : (
+            Products.map((item) => {
                 return (
                     <Link className="Link" to={`${item.id}`}>
                         <div className="col card text-center p-3 shadow-cards m-4" style={{"width": "20rem"}} key={item.id}>
@@ -62,7 +62,9 @@ const ProductsCards = () => {
                     </Link>
                 )
         })
-    } </div>
+        )
+        
+        } </div>
     )
 }
 

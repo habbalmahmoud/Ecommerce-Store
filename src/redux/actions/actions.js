@@ -1,3 +1,4 @@
+import { type } from "@testing-library/user-event/dist/type";
 import { ActionTypes } from "../constants/constants";
 
 
@@ -58,6 +59,27 @@ export const dispSize = (product) => {
 export const dispColor = (product) => {
     return {
         type : ActionTypes.DISP_COLOR,
+        payload : product
+    }
+}
+
+export const assignCart = (product) => {
+    return {
+        type: ActionTypes.ASSIGN_CART,
+        payload : product
+    }
+}
+
+export const removeProd = (product) => {
+    return {
+        type : ActionTypes.REMOVE_PRODUCT,
+        payload : product
+    }
+}
+
+export const addSalesProduct = (product) => {
+    return {
+        type : ActionTypes.ADD_SALES_PRODUCT,
         payload : product
     }
 }
